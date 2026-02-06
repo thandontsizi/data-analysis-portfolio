@@ -7,7 +7,6 @@ Each command is presented with its purpose and syntax for clarity and consistenc
 - Command: SELECT
 - Explanation: Retrieves data from one or more columns in the table.
 - Syntax:
-
 SELECT column1, column2
 FROM table_name;
 --------------------------------------------------------------------
@@ -17,7 +16,6 @@ FROM table_name;
 - Command: WHERE
 - Explanation: Filters rows based on specified conditions.
 - Syntax:
-
 SELECT *
 FROM table_name
 WHERE condition;
@@ -32,7 +30,6 @@ WHERE condition;
 - Command: ORDER BY
 - Explanation: Sorts query results in ascending or descending order.
 - Syntax:
-
 SELECT *
 FROM table_name
 ORDER BY column_name ASC|DESC;
@@ -43,7 +40,6 @@ ORDER BY column_name ASC|DESC;
 - Command: COUNT
 - Explanation: Counts the number of rows returned by a query.
 - Syntax:
-
 SELECT COUNT(*)
 FROM table_name;
 
@@ -51,7 +47,6 @@ FROM table_name;
 - Command: SUM
 - Explanation: Calculates the total values in a numeric column.
 - Syntax:
-
 SELECT SUM(column_name)
 FROM table_name;
 
@@ -59,7 +54,6 @@ FROM table_name;
 - Command: AVG
 - Explanation: Calculates the average value of a numeric column.
 - Syntax:
-
 SELECT AVG(column_name)
 FROM table_name;
 
@@ -67,7 +61,6 @@ FROM table_name;
 - Command: MIN
 - Explanation: Returns the smallest value in a numeric column.
 - Syntax:
-
 SELECT MIN(column_name)
 FROM table_name;
 
@@ -75,7 +68,6 @@ FROM table_name;
 - Command: MAX
 - Explanation: Returns the largest value in a numeric column.
 - Syntax:
-
 SELECT MAX(column_name)
 FROM table_name;
 -------------------------------------------------------------
@@ -85,7 +77,6 @@ FROM table_name;
 - Command: GROUP BY
 - Explanation: Groups rows that share the same values and applies aggregate functions.
 - Syntax: 
-
 SELECT column_name, Aggregate-Function(*)
 FROM table_name
 GROUP BY column_name;
@@ -94,10 +85,9 @@ GROUP BY column_name;
 - Command: HAVING
 - Explanation: Filters grouped data after aggregation is applied.
 - Syntax:
-
-SELECT column_name, Aggregate-Function(*)
-FROM table_name
-GROUP BY column_name
+SELECT column_name, Aggregate-Function(*) 
+FROM table_name 
+GROUP BY column_name 
 HAVING Aggregate-Function(*) > 5;
 -----------------------------------------------------------------
 
@@ -106,19 +96,17 @@ HAVING Aggregate-Function(*) > 5;
 - Command: INNER JOIN
 - Explanation: Returns rows where there is a match in both tables.
 - Syntax:
-
-SELECT *
-FROM table1
-INNER JOIN table2
+SELECT * 
+FROM table1 
+INNER JOIN table2 
 ON table1.id = table2.id;
 
 ### 6.2. LEFT JOIN:
 - Command: LEFT JOIN
 - Explanation: Returns all rows from the left table and matching rows from the right table.
 - Syntax: 
-
 SELECT * 
-FROM table1
+FROM table1 
 LEFT JOIN table2 
 ON table1.id = table2.id;
 -------------------------------------------------------------------------------------------
@@ -128,7 +116,6 @@ ON table1.id = table2.id;
 - Command: AS
 - Explanation: Renames columns or tables to improve readability.
 - Syntax:
-
 SELECT column_name 
 AS alias_name 
 FROM table_name;
@@ -139,9 +126,8 @@ FROM table_name;
 - Command: LIMIT
 - Explanation: Restricts the number of rows returned by a query.
 - Syntax: 
-
 SELECT * 
-FROM table_name
+FROM table_name 
 LIMIT number;
 ----------------------------------------------------------------
 
@@ -150,7 +136,7 @@ LIMIT number;
 - Command: DISTINCT
 - Explanation: Returns only unique values from a column.
 - Syntax: 
-SELECT DISTINCT column_name
+SELECT DISTINCT column_name 
 FROM table_name;
 
 ### 9.2. NULL:
