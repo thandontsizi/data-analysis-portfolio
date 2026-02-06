@@ -9,7 +9,7 @@ Each command is presented with its purpose and syntax for clarity and consistenc
 - Syntax:
 ```sql
 SELECT column1, column2
-FROM table_name;
+FROM table_name;```
 --------------------------------------------------------------------
 
 ## 2. Filtering Data:
