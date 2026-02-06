@@ -29,7 +29,7 @@ Key sections are:
 
 ## Tools and Technologies:
 The main tools used across this portfolio include:
-- PostgreSQL (SQL).
+- SQL(PostgreSQL).
 - Python (pandas, NumPy, matplotlib, seaborn).
 - Jupyter notebooks.
 - Git and GitHub (version control).
