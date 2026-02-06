@@ -8,7 +8,7 @@ Each command is presented with its purpose and syntax for clarity and consistenc
 - Explanation: Retrieves data from one or more columns in the table.
 - Syntax:
 ```sql
-SELECT column1, column2 FROM table_name;```
+SELECT column1, column2 FROM table_name;
 --------------------------------------------------------------------
 
 ## 2. Filtering Data:
