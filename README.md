@@ -8,6 +8,7 @@ The goal of this portfolio is not just to show results but to show how I think, 
 The repository is organised into learning sections. 
 Each section contains notes, commands, self-tests, and practical projects.
 Key sections are:
+- 00-PostgreSQL-Fundamentals/
 - 01-SQL-Analysis/
 - 02-Python-for-Data-Analysis/
 - 03-Exploratory-Data-Analysis/
@@ -28,7 +29,7 @@ Key sections are:
 
 ## Tools and Technologies:
 The main tools used across this portfolio include:
-- SQL.
+- PostgreSQL (SQL).
 - Python (pandas, NumPy, matplotlib, seaborn).
 - Jupyter notebooks.
 - Git and GitHub (version control).
