@@ -37,3 +37,12 @@ Each query is written to answer a specific question and is documented for clarit
 - Which customers contribute the highest total revenue?
 - How does revenue change over time?
 - Which products sell frequently but generate relatively low revenue?
+
+## Project Folder Structure:
+- 'analysis/'
+Contains all SQL scripts: schema creation (schema.sql), sample data inserts (data.sql), and analytical queries (queries,sql).
+
+- 'results/': 
+Summarises the findings in plain language (results.md). Screenshots or tables from query outputs are included as supporrting evidence in 'images/'.
+
+- 'lessons-learned,md': Short reflection on what was learned and insights gained from the analysis.
