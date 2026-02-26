@@ -17,7 +17,7 @@ This repository is a **portfolio**, not a learning log. Only completed recruiter
 ## Project Structure:
 Projects are organised by analytical skill area rather than by tools alone.
 
-Each project folder is self-containedand typically includes:
+Each project folder is self-contained and typically includes:
 - A project README describing the problem and approach.
 - Queries, commands, or code used for the analysis.
 - Results or outputs.
