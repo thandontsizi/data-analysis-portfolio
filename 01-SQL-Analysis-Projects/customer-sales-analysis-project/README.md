@@ -46,3 +46,17 @@ Contains all SQL scripts: schema creation (schema.sql), sample data inserts (dat
 Summarises the findings in plain language (results.md). Screenshots or tables from query outputs are included as supporrting evidence in 'images/'.
 
 - 'lessons-learned,md': Short reflection on what was learned and insights gained from the analysis.
+
+
+## How to Run This Project (psql):
+1. Connect to your database:
+- 'psql -U your_username -d database_name' ('psql -U thando -d customer_sales')
+
+2. Create tables:
+- '\i analysis/schema.sql'
+
+3. Insert sample data:
+- '\i analysis/data.sql'
+
+4. Run analysis queries:
+- '\i analysis/queries.sql'
