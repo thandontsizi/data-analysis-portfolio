@@ -58,7 +58,6 @@ project_02_netflix_content_analysis
 ├── 02_python
 │   ├── 01_dataset_audit.py
 │   ├── 02_findings.md
-│   ├── 03_data_cleaning.py
 │   ├── 03_dataset_cleaning.py
 │   └── 04_python_analysis.py
 ├── 03_sql
