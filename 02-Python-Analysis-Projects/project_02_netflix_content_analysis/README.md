@@ -49,7 +49,7 @@ The project follows a structured analysis workflow:
 ---
 
 ## Project Structure:
-'''bash
+```bash
 project_02_netflix_content_analysis
 ├── 01_data
 │   ├── cleaned_dataset.csv
@@ -66,7 +66,7 @@ project_02_netflix_content_analysis
 ├── 04_results
 │   └── insights.md
 └── README.md
-'''
+```
 
 ---
 
