@@ -48,7 +48,22 @@ The project follows a structured analysis workflow:
 ---
 
 ## Project Structure:
-
+project_02_netflix_content_analysis
+├── 01_data
+│   ├── cleaned_dataset.csv
+│   ├── netflix_titles.csv
+│   └── netflix_titles.csv:Zone.Identifier
+├── 02_python
+│   ├── 01_dataset_audit.py
+│   ├── 02_findings.md
+│   ├── 03_data_cleaning.py
+│   ├── 03_dataset_cleaning.py
+│   └── 04_python_analysis.py
+├── 03_sql
+│   └── 01_sql_analysis.sql
+├── 04_results
+│   └── insights.md
+└── README.md
 
 ---
 
