@@ -50,3 +50,47 @@ The project follows a structured, end-to-end data analysis workflow:
 
 3. Data cleaning and preparation:
 - '02_analysis/03_dataset_cleaning.py'
+
+4. Data analysis:
+- '02_analysis/04_analysis.py'
+
+5. Data visualisation:
+- '02_analysis/05_visualisation.py'
+
+6. Insights and reporting:
+- '03_results/insights.md'
+
+---
+
+## Project Structure:
+```bash
+../../project_03_msft_stock_analysis
+├── 01_data
+│   └── msft_stock_prices.csv
+├── 02_analysis
+│   ├── 01_dataset_audit.py
+│   ├── 02_findings.md
+│   ├── 03_dataset_cleaning.py
+│   ├── 04_analysis.py
+│   └── 05_visualisation.py
+├── 03_results
+│   ├── insights.md
+│   └── plots
+└── README.md
+```
+
+---
+
+## Analysis Questions:
+The analysis focuses on answering the following:
+- How has Microsoft's stock price changed over time?
+- What are the average monthly and yearly closing prices?
+- How volatile is the stock based on daily returns?
+- When did the stock reach its highest and lowest values?
+- How has trading volume changed over time?
+- What patterns can be observed using moving averages?
+
+---
+
+## Key Insights:
+**(To be completed after analysis).**
