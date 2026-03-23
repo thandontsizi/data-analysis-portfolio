@@ -1,44 +1,73 @@
 # Data Analysis Portfolio:
-**Name:** Thando Ntsizi
-**Focus:** Practical entry-level Data Analysis.
+- **Name:** Thando Ntsizi
+- **Focus:** Data Analysis with a focus on structured workflows and real-world datasets.
+
+---
 
 ## Overview:
-This repository contains a curated set of data analysis projects designed to demonstrate job-ready skills for Junior Data Analyst and Analytics roles.
+This repository contains a curated set of end-to-end data analysis projects designed to demonstrate practical skills for entry-level data roles.
 
-The projects emphasise:
-- Asking clear and relevant questions about data.
-- Structured analytical thinking.
-- Clean, readable SQL and Python.
-- Careful data preparation and validation.
-- Clear communicatioon of results and insights.
+Each project focuses on working with real datasets from initial inspection through to final insights using a structured and reproducible approach.
 
-This repository is a **portfolio**, not a learning log. Only completed recruiter-facing projects are included.
+---
+
+## Approach:
+The work in this portfolio emphasises:
+- Translating questions into structured analysis.
+- Careful data inspection and cleaning.
+- Clear, well-structured SQL and Python workflows.
+- Validation of results across tools where appropriate.
+- Communicating insights clearly and concisely.
+
+Projects prioritise clarity, correctness, and reasoning over complexity.
+
+---
 
 ## Project Structure:
-Projects are organised by analytical skill area rather than by tools alone.
+Projects are organised by analysis type and follow a consistent structure:
+- Project README (problem, objective, and approach).
+- Data inspection and cleaning steps.
+- Analysis scripts (Python and/or SQL).
+- Results and final insights.
 
-Each project folder is self-contained and typically includes:
-- A project README describing the problem and approach.
-- Queries, commands, or code used for the analysis.
-- Results or outputs.
-- Key insights and lessons learned.
+Each project is self-contained and reproducible.
 
-## Scope and Principles:
-- SQL is used as the primary analysis language where it is appropriate.
+---
+
+## Tools and Technologies:
+- Python (pandas, NumPy, Matplotlib).
+- SQL (PostgreSQL).
+- Git & GitHub.
+- Linux CLI (WSL).
+
+---
+
+## Scope:
+- SQL is used for structured data querying and validation.
 - Python is used for data preparation, analysis, and exploration.
-- Exploratory Data Analysis and data cleaning are treated as first-class steps.
-- Visualisation is used to communicate insights clearly,
-- Projects are intentionally small, focused, and realistic.
+- Data cleaning and exploratory analysis are treated as core steps.
+- Visualisation is used to support and communicate insights.
 
-Foundational learning, experimentation, and practice are maintained in the 'data-analysis-learning' repository and are not part of this portfolio.
+Projects are intentionally focused, practical, and based on realistic data scenarios.
 
-## Purpose of the Portfolio:
-The goal of this portfolio is to demonstrate the ability to:
-- Work with real datasets from start to finish.
-- Translate questions into analysis.
-- Produce correct, well-structured analysis.
-- Explain findings clearly and concisely.
-- Deliver complete and well-documented projects.
+---
+
+## Purpose:
+This portfolio is designed to demonstrate the ability to:
+- Work with real-world datasets end-to-end.
+- Build structured and reproducible data workflows.
+- Apply analytical thinking to solve problems.
+- Produce accurate and well-documented analysis.
+- Communicate findings in a clear and professional manner.
+
+---
+
+## Notes:
+This repository is a **portfolio**, not a learning log.
+
+Foundational learning, experimentation, and smaller exercises are maintained separately in the 'data-analysis-learning' repository.
+
+---
 
 ## Repository/Portfolio Status:
 This portfolio is actively maintained and expanded as new projects are completed.
