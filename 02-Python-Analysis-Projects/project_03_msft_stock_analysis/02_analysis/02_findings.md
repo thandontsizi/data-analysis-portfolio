@@ -1,75 +1,60 @@
-# Dataset Findings:
+# Dataset Audit Findings and Cleaning Decisions:
 
-## Overview:
-The dataset contains historical daily stock price data for Microsoft (MSFT) including price, volume, and several pre-calculated technical indicators.
-
-The goal of this step is to assess the structure, quality, and suitability of the dataset for analysis.
+## Objective:
+The purpose of this document is to record observations from the dataset audit and define how each data-related issue will be handled before analysis.
 
 ---
 
-## Structure:
-- The dataset contains 10,000+ rows and 20+ columns.
-- Each row represents a single trading day.
-- The dataset includes both raw market data and engineered features.
+## Dataset Overview:
+Dataset Shape (before cleaning): (10072, 23)
+- Rows: 10072
+- Columns: 23
+
+- Duplicate Rows: 0
 
 ---
 
-## Key Observations:
-### 1. Presence of Engineered Features:
-The dataset includes pre-calculated indicators such as:
-- Moving averages (MA_20, MA_50, MA_200).
-- Volatility measures (Volatility_20D).
-- Momentum indicators (RSI, MACD).
-- Bollinger Bands (BB_Upper, BB_Lower, BB_Middle).
-- Daily returns and ranges.
-
-These features were not generated as part of this project.
-
----
-
-### 2. Decision to Use Raw Data Only:
-To ensure that all analysis is performed independently, only the following raw columns will be used:
-- Date
-- Open
-- High
-- Low
-- Close
-- Volume
-
-All pre-calculated columns will be excluded.
+## Missing Values:
+The following columns contain missing values:
+- Daily_Return_Pct: 1
+- MA_20: 19
+- MA_50: 49
+- MA_200: 199
+- Volatility_20D: 20
+- Volume_MA_20: 19
+- RSI_14: 14
+- BB_Upper: 19
+- BB_Lower: 19
+- BB_Middle: 19
 
 ---
 
-### 3. Data Types:
-- The 'Date' column is stored as an object and will need to be converted to datetime format.
-- Numerical columns (prices and volume) are correctly stored.
+## Observations:
+- The dataset includes both raw stock data and pre-calculated technical indicators.
+- Technical indicators include moving averages, volatility, RSI, MACD, and Bollinger Bands.
+- Missing values are present only in these engineered columns and are expected due to rolling calculations.
+- The `Date` column is stored as text and requires conversion to datetime format.
+- No duplicate rows are present.
+- The dataset spans a long time period (1986–2026), which is broader than required for this analysis.
 
 ---
 
-### 4. Missing Values:
-- Missing values are present only in the pre-engineered columns (e.g. moving averages, RSI).
-- These are expected due to rolling calculations.
+## Cleaning Decisions:
+- Engineered columns (e.g. moving averages, RSI, MACD, Bollinger Bands) will be removed/dropped.
+- The analysis will use only raw columns:
+  - Date
+  - Open
+  - High
+  - Low
+  - Close
+  - Volume
 
-After removing the pre-engineered columns, the dataset is expected to have no missing values.
-
----
-
-### 5. Duplicates:
-- No duplicate rows were found.
-
----
-
-### 6. Dataset Size and Scope:
-- The dataset spans multiple decades (1986-2026).
-- For this analysis, the dataset will be filtered to a more recent and relevant time period to keep the scope focused and manageable.
+- Date: convert to datetime format.
+- Dataset will be sorted chronologically.
+- Dataset will be filtered to a recent time period (e.g. 2015 onwards) to keep the analysis focused.
+- No rows will be removed after filtering, as the remaining data is complete and usable.
 
 ---
 
-## Summary of Actions:
-The following steps will be taken during data cleaning:
-- Remove all engineered columns.
-- Convert 'Date' to datetime format.
-- Sort data chronologically.
-- Filter dataset to a defined time range (e.g. 2015 onwards).
-
-These steps ensure that the analysis is based on clean, reliable, and independently processed data.
+## Notes:
+The analysis will be performed using raw data only to ensure that all calculations (e.g. returns, moving averages, volatility) are done independently within the project.
