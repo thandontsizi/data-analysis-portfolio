@@ -16,17 +16,14 @@ The objective of this project is to demonstrate the ability to:
 ---
 
 ## Dataset Information:
-
 - **Source:** MSFT Stock Data 1986-2026
 - **Link:** https://www.kaggle.com/datasets/omarshahrukh/msft-stock-data-19862026
 
 The dataset contains daily stock market data including:
-- Date
-- Open price
-- High price
-- Low price
-- Close price
-- Trading volume
+- Date.
+- Open, High, Low, Close prices.
+- Volume.
+- Derived metrics such as return technical indicators.
 
 ---
 
@@ -42,30 +39,42 @@ The analysis uses the following tools:
 ## Workflow:
 The project follows a structured, end-to-end data analysis workflow:
 
-1. Data inspection:
-- '02_analysis/01_dataset_audit.py'
+1. **Data inspection:**
+	- ['02_analysis/01_dataset_audit.py'](02_analysis/01_dataset_audit.py)
 
-2. Data quality assessment and documentation:
-- '02_analysis/02_findings.md'
+2. **Data quality assessment and documentation:**
+	- ['02_analysis/02_findings.md'](02_analysis/02_findings.md)
 
-3. Data cleaning and preparation:
-- '02_analysis/03_dataset_cleaning.py'
+3. **Data cleaning and preparation:**
+	- ['02_analysis/03_dataset_cleaning.py'](02_analysis/03_dataset_cleaning.py)
+	- Created:
+		- Daily Returns.
+		- Moving Averages (7-day, 30-day).
+		- Rolling Volatility.
+		
+4. **Data analysis:**
+	- ['02_analysis/04_analysis.py'](02_analysis/04_analysis.py)
+	
+5. **Data visualisation:**
+	- ['02_analysis/05_visualisation.py'](02_analysis/05_visualisation.py)
+	- Generated plots for:
+		- Price trends.
+		- Moving averages.
+		- Daily returns.
+		- Volatility.
+		- Yearly averages.
 
-4. Data analysis:
-- '02_analysis/04_analysis.py'
-
-5. Data visualisation:
-- '02_analysis/05_visualisation.py'
-
-6. Insights and reporting:
-- '03_results/insights.md'
+6. **Insights and reporting:**
+	- ['03_results/insights.md'](03_results/insights.md)
 
 ---
 
 ## Project Structure:
 ```bash
-../../project_03_msft_stock_analysis
+../project_03_msft_stock_analysis
 ├── 01_data
+│   ├── analysed_msft_stock_prices.csv
+│   ├── cleaned_msft_stock_prices.csv
 │   └── msft_stock_prices.csv
 ├── 02_analysis
 │   ├── 01_dataset_audit.py
@@ -76,6 +85,11 @@ The project follows a structured, end-to-end data analysis workflow:
 ├── 03_results
 │   ├── insights.md
 │   └── plots
+│       ├── close_price.png
+│       ├── daily_returns.png
+│       ├── moving_averages.png
+│       ├── volatility.png
+│       └── yearly_average.png
 └── README.md
 ```
 
@@ -84,13 +98,17 @@ The project follows a structured, end-to-end data analysis workflow:
 ## Analysis Questions:
 The analysis focuses on answering the following:
 - How has Microsoft's stock price changed over time?
-- What are the average monthly and yearly closing prices?
-- How volatile is the stock based on daily returns?
-- When did the stock reach its highest and lowest values?
-- How has trading volume changed over time?
-- What patterns can be observed using moving averages?
+- What overall trends can be observed in the data?
+- Are there periods of rapid growth or decline?
+- How stable or unstable are price changes over time?
+- How do short-term trends compare to longer-term trends?
+- How has trading activity (volume) changed over time?
 
 ---
 
 ## Key Insights:
-**(To be completed after analysis).**
+- Microsoft's stock shows a strong long-term upward trend, with consistent growth in yearly average prices.
+- Daily price movements fluctuate frequently, indicating regular short-term volatility despite long-term growth.
+- Moving averages (7-day and 30-day) clearly highlight the underlying upward trend by smoothing short-term noise.
+- Volatility varies over time, showing periods of both stability and increased market uncertainty.
+- Overall, the data reflects sustained growth combined with natural day-by-day variability.
